@@ -222,7 +222,15 @@ img {
     display: flex;
     margin-bottom: 1.6rem; }
   .message__media {
-    margin-right: 1.8rem; }
+    margin-right: 1.8rem;
+    width: 3.2rem;
+    height: 3.2rem; }
+    .message__media img {
+      width: 3.2rem; }
+  .message__link {
+    text-decoration: underline; }
+    .message__link--orange {
+      color: #FF9100; }
 
 .dots {
   margin: 3.2rem 0;
