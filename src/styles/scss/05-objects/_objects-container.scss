@@ -1,0 +1,26 @@
+.main-container {
+    // background-color: $main-background-color;
+}
+
+.container {
+
+
+    &--flex {
+        display: flex;
+    }
+
+    &--grid {
+        display: grid;
+        grid-template-columns: 2rem 1fr 2rem;
+
+        &-full-size {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+
+    &--main-layout {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

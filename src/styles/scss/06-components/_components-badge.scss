@@ -1,0 +1,16 @@
+.badge {
+    box-shadow: $shadow-1dp;
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    text-transform: uppercase;
+
+    &--yellow {
+        color: $color-white;
+        background-color: $color-orange-500;
+    }
+}

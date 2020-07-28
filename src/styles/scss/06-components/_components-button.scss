@@ -1,0 +1,26 @@
+.btn {
+    font-family: "Lato", sans-serif;
+    border: none;
+    border-radius: 10rem;
+    text-transform: uppercase;
+
+    &--primary {
+        box-shadow: $shadow-4dp-button;
+        color: $color-white;
+        background-color: $color-orange-800;
+    }
+
+    &--small {
+        padding: 1rem 2.2rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.6rem;
+    }
+
+    &--extra-large {
+        padding: 1.6rem 9.4rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+}
