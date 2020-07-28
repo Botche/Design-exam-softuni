@@ -1,0 +1,12 @@
+.message {
+    color: $color-grey-700;
+
+    &__header {
+        display: flex;
+        margin-bottom: 1.6rem;
+    }
+
+    &__media {
+        margin-right: 1.8rem;
+    }
+}
