@@ -154,9 +154,12 @@ a {
   .dots .dot {
     width: 1rem;
     height: 1rem;
-    background-color: #FFECB3;
     border-radius: 50%;
     margin: 0 0.4rem; }
+    .dots .dot--orange {
+      background-color: #FFECB3; }
+    .dots .dot--green {
+      background-color: #DFF4F1; }
 
 .footer {
   background-color: #565656;
@@ -183,11 +186,13 @@ a {
   .header__arrow-wrapper {
     margin-right: 1.4rem; }
   .header-section {
-    background-color: #44A9F8;
     text-align: center;
-    padding: 6.8rem 0 8.5rem; }
-    .header-section__title {
-      color: #FFFFFF; }
+    padding: 6.8rem 0 8.5rem;
+    color: #FFFFFF; }
+    .header-section--blue {
+      background-color: #44A9F8; }
+    .header-section--orange {
+      background-color: #FFB402; }
   .header-candidate {
     background-color: #FFFFFF;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.12), 0 0 0.2rem rgba(0, 0, 0, 0.14);
@@ -332,8 +337,34 @@ a {
 .section-resume__video-button {
   height: 30%; }
 
+.trainer {
+  margin-bottom: 6.2rem; }
+  .trainer__media {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0.8rem solid #41BEAD; }
+  .trainer__name {
+    color: #41BEAD;
+    font-family: Montserrat;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem; }
+  .trainer__position {
+    color: #B2B2B2;
+    font-size: 1.4rem;
+    line-height: 1.6rem; }
+  .trainer__description {
+    color: #565656; }
+
 .text-bold {
   font-weight: bold !important; }
+
+.centered--text {
+  text-align: center; }
+
+.centered--half-width {
+  margin: 0 auto;
+  width: 50%; }
 
 .centered--flex {
   justify-content: space-between;

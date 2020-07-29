@@ -1,5 +1,14 @@
 .centered {
 
+    &--text {
+        text-align: center;
+    }
+
+    &--half-width {
+        margin: 0 auto;
+        width: 50%;
+    }
+
     &--flex {
         justify-content: space-between;
         align-items: center;

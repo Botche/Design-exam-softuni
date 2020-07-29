@@ -1,0 +1,27 @@
+.trainer {
+    margin-bottom: 6.2rem;
+
+    &__media {
+        overflow: hidden;
+        border-radius: 50%;
+        border: 0.8rem solid $color-green-300;
+    }
+
+    &__name {
+        color: $color-green-300;
+        font-family: Montserrat;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &__position {
+        color: $color-grey-400;
+        font-size: 1.4rem;
+        line-height: 1.6rem;  
+    }
+
+    &__description {
+        color: $color-grey-700;
+    }
+}

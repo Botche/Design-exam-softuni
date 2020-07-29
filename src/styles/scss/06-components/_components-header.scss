@@ -9,12 +9,16 @@
     }
 
     &-section {
-        background-color: $color-blue-400;
         text-align: center;
         padding: 6.8rem 0 8.5rem;
+        color: $color-white;
 
-        &__title {
-            color: $color-white;
+        &--blue {
+            background-color: $color-blue-400;
+        }
+
+        &--orange {
+            background-color: $color-orange-600;
         }
     }
 
