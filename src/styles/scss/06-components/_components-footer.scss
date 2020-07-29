@@ -2,8 +2,14 @@
     background-color: $color-grey-700;
     color: $color-white;
 
-    .list-icon__wrapper {
-        margin-top: 3.2rem;
+    &::before {
+        @extend %pseudo;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        top: 0;
+        width: 100%;
+        height: 1.2rem;
+        background-color: $color-grey-500;
     }
 
     .list-icon {

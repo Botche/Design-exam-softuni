@@ -23,4 +23,8 @@
         line-height: 2rem;
         font-weight: 600;
     }
+
+    &:hover {
+        cursor: url("../../../images/Cursor.svg"), auto;
+    }
 }

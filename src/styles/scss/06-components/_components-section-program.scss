@@ -24,15 +24,13 @@
         margin-bottom: 1.6rem;
 
         &::after {
+            @extend %center-Y-absolute;
             content: url(../../../images/main/Input-arrow-down.svg);
             display: block;
             width: 3.2rem;
             height: 3.2rem;
-            position: absolute;
             z-index: 2;
-            top: 50%;
             right: 4%;
-            transform: translateY(-50%);
         }
     }
 

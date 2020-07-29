@@ -1,0 +1,23 @@
+%pseudo {
+    content: "";
+    display: block;
+}
+
+%center-both-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%center-Y-absolute {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%center-X-absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

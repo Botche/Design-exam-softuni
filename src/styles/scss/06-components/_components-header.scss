@@ -43,14 +43,9 @@
             }
 
             &::before {
-                content: "";
-                display: block;
+                @extend %pseudo; 
                 // TODO
             }
         }
-    }
-
-    &__information {
-        margin-bottom: 2.4rem;
     }
 }
