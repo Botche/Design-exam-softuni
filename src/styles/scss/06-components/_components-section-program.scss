@@ -1,0 +1,58 @@
+.section-program {
+    background-color: $color-orange-500;
+    color: $color-grey-700;
+    position: relative;
+
+    &__header {
+        display: flex;
+        margin-bottom: 2.4rem;
+    }
+
+    &__media {
+        align-self: flex-start;
+        margin-right: 1.6rem;
+    }
+
+    &__form-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    &__input-wrapper {
+        position: relative;
+        margin-bottom: 1.6rem;
+
+        &::after {
+            content: url(../../../images/main/Input-arrow-down.svg);
+            display: block;
+            width: 3.2rem;
+            height: 3.2rem;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            right: 4%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .section-program__dots {
+        display: flex;
+    
+        &--top {
+            margin-top: -0.5rem;
+        }
+
+        &--bottom {
+            margin-bottom: -0.5rem;
+        }
+
+        .dot {
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-white;
+            border-radius: 50%;
+            margin: 0 0.4rem;
+        }
+    }
+}
