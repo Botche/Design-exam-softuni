@@ -1,5 +1,6 @@
 .main-container {
-    // background-color: $main-background-color;
+    min-width: min-content;
+    color: $color-grey-700;
 }
 
 .container {
@@ -12,6 +13,10 @@
     &--grid {
         display: grid;
         grid-template-columns: 2rem 1fr 2rem;
+
+        @include for-tablet-landscape-up {
+            grid-template-columns: 7.5rem 1fr 7.5rem;
+        }
 
         &-full-size {
             grid-column-start: 1;

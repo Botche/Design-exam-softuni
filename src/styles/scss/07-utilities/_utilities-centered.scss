@@ -1,16 +1,16 @@
 .centered {
 
     &--text {
-        text-align: center;
+        text-align: center !important;
     }
 
     &--half-width {
-        margin: 0 auto;
-        width: 50%;
+        margin: 0 auto !important;
+        width: 50% !important;
     }
 
     &--flex {
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between !important;
+        align-items: center !important;
     }
 }

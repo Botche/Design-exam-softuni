@@ -2,7 +2,6 @@
     position: relative;
     width: min-content;
 
-
     &__line {
         display: block;
         width: 3.3rem;
@@ -57,5 +56,9 @@
     &__flag:checked ~ &__line:nth-last-child(3)
     {
         transform: rotate(45deg);
+    }
+
+    @include for-tablet-landscape-up {
+        display: none;
     }
 }

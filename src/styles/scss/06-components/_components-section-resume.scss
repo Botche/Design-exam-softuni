@@ -1,8 +1,14 @@
 .section-resume {
+    @include for-tablet-landscape-up {
+        display: flex;
+        justify-content: space-between;
+    }
 
-    
-    &__content {
-        color: $color-grey-700;
+    &__content-wrapper {
+
+        @include for-tablet-landscape-up {
+            flex-basis: 60%;
+        }
     }
 
     &__media {
@@ -12,6 +18,10 @@
             cursor: url("../../../images/Cursor.svg"), auto;
         }
 
+        @include for-tablet-landscape-up {
+            flex-basis: 35%;
+            align-self: flex-end;
+        }
     }
 
     &__video-button {

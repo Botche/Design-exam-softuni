@@ -1,5 +1,54 @@
 .navigation {
     display: flex;
+    align-items: center;
+
+    &__list-wrapper {
+        @include for-phone-only {
+            display: none;
+        }
+        
+        @include for-tablet-portrait-up {
+            display: none;
+        }
+
+        @include for-tablet-landscape-up {
+            display: flex;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding: 2.9rem 1.2rem;
+    }
+
+    &__link {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            color: $color-orange-800;
+            cursor: url('../../../images/Cursor.svg'), auto;
+        }
+    }
+
+    &__search {
+        margin-right: 3.2rem;
+        margin-left: 2rem;
+
+        &:hover {
+            cursor: url('../../../images/Cursor.svg'), auto;
+        }
+    }
 
     &--footer {
         height: 42rem;

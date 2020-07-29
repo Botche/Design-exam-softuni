@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Trainers</title>
     <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 
@@ -13,7 +13,7 @@
         <header class="margin--bottom-large">
             <section class="header container--grid">
                 <div class="container--flex container--main-layout centered--flex">
-                    <div class="header__logo-wrapper container--flex">
+                    <div class="header__logo-wrapper--mobile container--flex">
                         <div class="header__arrow-wrapper">
                             <img class="header__arrow--black" src="./images/header/Arrow-header-drop-down-mobile.svg"
                                 alt="Menu icon">
@@ -22,8 +22,28 @@
                             <img src="./images/header/Logo-header-mobile.svg" alt="Logo">
                         </div>
                     </div>
+                    <div class="header__logo-wrapper--not-mobile container--flex">
+                        <div class="header__arrow-wrapper">
+                            <img class="header__arrow" src="./images/header/Arror-header-drop-down.svg"
+                                alt="Menu icon">
+                        </div>
+                        <div class="header__logo">
+                            <img src="./images/header/Logo-header.svg" alt="Logo">
+                        </div>
+                    </div>
 
                     <nav class="navigation">
+                        <div class="navigation__list-wrapper">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a class="navigation__link" href="#">обучения</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Събития</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="/trainers.html">Преподаватели</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Блог</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                        
+                        <img class="navigation__search" src="./images/header/Search-icon.svg" alt="Search icon">
                         <button class="btn btn--primary btn--small">Вход</button>
 
                         <div class="burger-menu margin--left">
