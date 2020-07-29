@@ -1,8 +1,42 @@
+.section-messages {
+    @include for-tablet-landscape-up {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dots {
+        @include for-tablet-landscape-up {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 !important;
+
+            .dot:nth-child(2n) {
+                display: none;
+            }
+        }
+    }
+}
+
 .message {
 
     &__header {
         display: flex;
         margin-bottom: 1.6rem;
+
+        &--phone {
+            @include for-tablet-landscape-up {
+                display: none;
+            }
+        }
+
+        &--laptop {
+            display: none;
+
+            @include for-tablet-landscape-up {
+                display: flex;
+            }
+        }
     }
 
     &__media {
@@ -15,11 +49,21 @@
         }
     }
 
+    &__description {
+        @include for-tablet-landscape-up {
+            padding-left: 5rem;
+        }
+    }
+
     &__link {
         text-decoration: underline;
 
         &--orange {
             color: $color-orange-800;
         }
+    }
+
+    @include for-tablet-landscape-up {
+        flex-basis: 45%;
     }
 }

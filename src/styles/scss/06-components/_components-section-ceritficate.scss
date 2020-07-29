@@ -1,0 +1,47 @@
+.section-certificate {
+    display: none;
+    margin-bottom: 10rem;
+
+    @include for-tablet-landscape-up {
+        display: flex;
+        align-items: center;
+    }
+
+    &__body {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    &__icon-wrapper {
+        align-self: start;
+        margin-right: 1.8rem;
+    }
+
+    &__icon {    
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__media {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__media-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 20rem;
+
+        background: $color-grey-300;
+        
+        box-shadow: $shadow-1dp;
+        border-radius: 1.2rem;
+    }
+}
