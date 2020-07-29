@@ -1,0 +1,25 @@
+.section-be-part-of-us {
+    background-color: $color-blue-300;
+    color: $color-white;
+    position: relative;
+
+    &::before {
+        @extend %pseudo;
+        width: 100%;
+        position: absolute;
+        top: -1.2rem;
+        height: 1.2rem;
+        background-color: $color-blue-200;
+    }
+
+    &__form {
+        margin: 4.8rem 0 4.6rem;
+    }
+
+    &__input {
+        margin: 1.8rem 0;
+        color: $color-white;
+        border: 0.1rem solid $color-white;
+        background-color: transparent;
+    }
+}

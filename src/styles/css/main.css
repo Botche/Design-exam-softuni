@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
-  line-height: 4rem; }
+  line-height: 3rem; }
 
 h4 {
   font-size: 1.8rem;
@@ -140,6 +140,11 @@ a {
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.6rem; }
+  .btn--large {
+    padding: 1.4rem 12.9rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600; }
   .btn--extra-large {
     padding: 1.6rem 9.4rem;
     font-size: 1.6rem;
@@ -289,6 +294,24 @@ a {
   color: #919191;
   text-align: center; }
 
+.section-be-part-of-us {
+  background-color: #66B9F8;
+  color: #FFFFFF;
+  position: relative; }
+  .section-be-part-of-us::before {
+    width: 100%;
+    position: absolute;
+    top: -1.2rem;
+    height: 1.2rem;
+    background-color: #92CDFB; }
+  .section-be-part-of-us__form {
+    margin: 4.8rem 0 4.6rem; }
+  .section-be-part-of-us__input {
+    margin: 1.8rem 0;
+    color: #FFFFFF;
+    border: 0.1rem solid #FFFFFF;
+    background-color: transparent; }
+
 .section-program {
   background-color: #FFC20A;
   color: #565656;
@@ -409,7 +432,7 @@ a {
   .margin--right-large {
     margin-right: 6.4rem !important; }
 
-.footer::before, .header-candidate__perforated-line::before {
+.footer::before, .header-candidate__perforated-line::before, .section-be-part-of-us::before {
   content: "";
   display: block; }
 
