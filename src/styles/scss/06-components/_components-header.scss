@@ -51,32 +51,144 @@
     }
 
     &-candidate {
+        overflow: hidden;
         background-color: $color-white;
         box-shadow: $shadow-1dp;
         border-radius: 1.2rem;
         margin-top: -6rem;
 
+        &__wrapper {
+            @include for-desktop-up {
+                display: grid;
+                grid-template-columns: 5% 20% 5% 2% 5% 1fr 5%;
+            }
+        }
+
+
         &__btn {
-            margin: 4.6rem 0;
+            margin: 4.6rem auto;
+
+            @include for-desktop-up {
+                padding: 1.4rem 3.2rem;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         &__perforated-line {
             margin-bottom: 2.4rem;
             display: flex;
             justify-content: center;
+            position: relative;
 
-            & > .dot {   
+            .dot {   
                 width: 1.5rem;
                 height: 1.5rem;
                 box-shadow: inset 0.1rem 0.1rem 0.2rem 0 rgba(0,0,0,0.75);
                 background-color: transparent;
                 border-radius: 50%;
                 margin: 0 0.4rem;
+
+                @include for-phone-only {
+                    &:nth-child(n + 16) {
+                        display: none;
+                    }
+                }
+
+                @include for-tablet-portrait-up {
+                    &:nth-child(n + 32) {
+                        display: none;
+                    }
+                }
+
+                @include for-tablet-landscape-up {
+
+                    &:nth-child(n) {
+                        display: block;
+                    }
+                }
+
+                @include for-desktop-up {
+                    width: 1.2rem;
+                    height: 1.2rem;
+
+                    &:nth-child(-n + 2) {
+                        background-color: $color-blue-400;
+                    }
+
+                    &:nth-child(3) {
+                        background: linear-gradient($color-blue-400 50%, transparent 50%);
+                    }
+
+                    &:nth-child(n + 7) {
+                        display: none;
+                    }
+                }
             }
 
             &::before {
                 @extend %pseudo; 
-                // TODO
+                position: absolute;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                box-shadow: inset 0.1rem 0.1rem 0.2rem 0 rgba(0,0,0,0.75);
+                background-color: transparent;
+
+                @include for-phone-only {
+                    left: -2%;
+                }
+
+                @include for-tablet-portrait-up {
+                    left: -1%;
+                }
+
+                @include for-desktop-up {
+                    top: -14%;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    background-color: $color-blue-400;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            } 
+
+            &::after {
+                @extend %pseudo; 
+                position: absolute;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                box-shadow: inset 0.1rem 0.1rem 0.2rem 0 rgba(0,0,0,0.75);
+                background-color: transparent;
+
+                @include for-phone-only {
+                    right: -2%;
+                }
+
+                @include for-tablet-portrait-up {
+                    right: -1%;
+                }
+
+                @include for-desktop-up {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    bottom: -14%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            } 
+
+            @include for-desktop-up {
+                height: 85%;
+                margin: auto 0;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                grid-column-start: 4;
+                grid-column-end: 5;
             }
         }
     }

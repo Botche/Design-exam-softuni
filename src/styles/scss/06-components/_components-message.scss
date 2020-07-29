@@ -15,6 +15,25 @@
                 display: none;
             }
         }
+
+        @include for-phone-only {
+
+            .dot:nth-child(2n) {
+                display: none;
+            }
+        }
+
+        &--fewer { 
+            @include for-tablet-landscape-up {
+                .dot:nth-child(n) {
+                    display: block;
+                }
+
+                .dot:nth-child(n + 10) {
+                    display: none;
+                }
+            }
+        }
     }
 }
 

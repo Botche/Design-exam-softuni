@@ -1,7 +1,27 @@
+.information-section__wrapper {
+    margin-bottom: 2.4rem;
+
+    @include for-tablet-portrait-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include for-desktop-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0 !important;
+        flex-grow: 1;
+        
+        grid-column-start: 6;
+        grid-column-end: 7;
+    }
+}
+
 .information-section {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 
     &__media {
         margin-right: 2.4rem;
@@ -32,5 +52,10 @@
         width: 2.4rem;
         height: 0.2rem;
         margin: 2.4rem 0;
+
+        @include for-tablet-portrait-up {
+            transform: rotate(90deg);
+            margin: 3.2rem 0;
+        }
     }
 }

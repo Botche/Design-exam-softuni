@@ -42,11 +42,16 @@
     }
 
     &__search {
+        display: none;
         margin-right: 3.2rem;
         margin-left: 2rem;
 
         &:hover {
             cursor: url('../../../images/Cursor.svg'), auto;
+        }
+
+        @include for-tablet-landscape-up {
+            display: block;
         }
     }
 
@@ -54,19 +59,75 @@
         height: 42rem;
         margin-top: 4rem;
         flex-flow: column wrap;
+
+        @include for-tablet-landscape-up { 
+            height: 30rem;
+            flex-flow: row;
+            align-items: stretch;
+            justify-content: space-between;
+        }
     }
 }
 
 .footer-navigation {
+    align-items: unset;
+
+    &__wrapper {
+        @include for-tablet-landscape-up {
+            flex-basis: 15%;
+        }
+
+        .laptop-only.footer-navigation__copy-right {
+            
+            @include for-tablet-landscape-up {
+                text-align: unset;
+                margin: 0;
+                width: 100%;
+                margin-top: 3.8rem;
+            }
+        }
+
+        &--bigger {
+                
+            @include for-tablet-landscape-up {
+                flex-basis: 20%;
+            }
+        }
+    }
+
+    &__media {
+        display: none;
+
+        @include for-tablet-landscape-up { 
+            display: block;
+            position: relative;
+            height: 40rem;
+            top: -34%;
+        }
+    }
 
     &__title {
         margin-bottom: 1.6rem;
+    }
+
+    &__list-wrapper {
+        @include for-tablet-landscape-up { 
+            display: flex;
+        }
     }
 
     &__list {
         list-style-type: none;
         padding: 0;
         margin: 0;
+
+        &--aside {
+            display: block;
+            
+            @include for-tablet-landscape-up { 
+                margin-left: 2.4rem;
+            }
+        }
     }
 
     &__item {
@@ -75,6 +136,11 @@
 
     &__link {
         color: $color-grey-200;
+
+        &:hover {
+            cursor: url('../../../images/Cursor.svg'), auto;
+            color: $color-green-300;
+        }
     }
 
     &__line {
@@ -83,6 +149,10 @@
         border: none;
         height: 0.1rem;
         margin-bottom: 3.2rem;
+
+        @include for-tablet-landscape-up {
+            display: none;
+        }
     }
 
     &__copy-right {
@@ -90,5 +160,22 @@
         margin: 0 auto 3.2rem;
         color: $color-grey-500;
         text-align: center;
+
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+    }
+
+    .laptop-only {
+        display: none;
+        @include for-tablet-landscape-up {
+            display: block; 
+        }
+    }
+
+    .list-icon__wrapper {
+        @include for-tablet-landscape-up {
+            margin: 0 !important;
+        }
     }
 }
