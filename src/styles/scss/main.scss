@@ -5,23 +5,24 @@
 @import "./01-settings/settings-shadows";
 @import "./01-settings/settings-typography";
 
-@import "./04-elements/elements-link";
 @import "./04-elements/elements-image";
 @import "./04-elements/elements-inputs";
+@import "./04-elements/elements-link";
 
 @import "./05-objects/objects-container";
 
-@import "./06-components/components-header";
+@import "./06-components/components-badge";
 @import "./06-components/components-burger-menu";
 @import "./06-components/components-button";
-@import "./06-components/components-navigation";
-@import "./06-components/components-badge";
-@import "./06-components/components-information-section-header";
-@import "./06-components/components-section-resume";
-@import "./06-components/components-section-program";
-@import "./06-components/components-message";
 @import "./06-components/components-dots";
+@import "./06-components/components-footer";
+@import "./06-components/components-header";
+@import "./06-components/components-information-section-header";
+@import "./06-components/components-message";
+@import "./06-components/components-navigation";
+@import "./06-components/components-section-program";
+@import "./06-components/components-section-resume";
 
-@import "./07-utilities/utilities-margin";
-@import "./07-utilities/utilities-centered";
 @import "./07-utilities/utilities-bold";
+@import "./07-utilities/utilities-centered";
+@import "./07-utilities/utilities-margin";
