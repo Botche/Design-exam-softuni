@@ -1,23 +1,57 @@
+.trainers-wrapper {
+    @include for-tablet-landscape-up {
+        display: flex;
+    }
+}
+
 .trainer {
     margin-bottom: 6.2rem;
+
+    @include for-tablet-landscape-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
     &__media {
         overflow: hidden;
         border-radius: 50%;
         border: 0.8rem solid $color-green-300;
+    
+        @include for-tablet-landscape-up {
+            flex-basis: 30%;
+        }
     }
 
     &__name {
+        text-align: center;
         color: $color-green-300;
         font-family: Montserrat;
         font-size: 2rem;
         line-height: 2.4rem;
+        margin-top: 3.2rem;
         margin-bottom: 0.8rem;
+    
+        @include for-tablet-landscape-up {
+            text-align: start;
+            margin-top: 0;
+        }
     }
 
     &__position {
+        text-align: center;
         color: $color-grey-400;
         font-size: 1.4rem;
         line-height: 1.6rem;  
+    
+        @include for-tablet-landscape-up {
+            text-align: start;
+        }
+    }
+
+    &__content {
+        @include for-tablet-landscape-up {
+            flex-basis: 60%;
+        }
     }
 }
