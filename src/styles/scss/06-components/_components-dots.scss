@@ -41,6 +41,16 @@
                 }
             }
 
+            @include for-desktop-up {
+                &:nth-child(n) {
+                    display: block;
+                }
+
+                &:nth-child(n + 76) {
+                    display: none;
+                }
+            }
+
             @include for-big-desktop-up {
                 &:nth-child(n) {
                     display: block;

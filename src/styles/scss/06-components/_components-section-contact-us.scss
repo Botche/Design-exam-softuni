@@ -1,14 +1,46 @@
 .section-contact-us {
-    margin-bottom: 3.2rem;
+    margin: 3.2rem 0;
+
+    // @include for-desktop-up {
+    //     margin-top: -8rem;
+    // }
+
+    @include for-desktop-up {
+        margin-top: -25rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &__title {
         color: $color-green-300;
         text-align: center;
     }
 
+    &__form {
+        @include for-desktop-up {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+    }
+
     &__input {
         border: 1px solid $color-grey-500;
         margin-bottom: 2.4rem;
+
+        @include for-desktop-up {
+            flex-basis: 48%;
+        }
+
+        &--big {
+            height: 10rem;
+
+            @include for-desktop-up {
+                height: 20rem;
+                flex-basis: 100%;
+            }
+        }
     }
 
     &__btn {
@@ -16,5 +48,11 @@
         left: 50%;
         transform: translateX(-50%);
         padding: 1.4rem 3.2rem;
+
+        @include for-desktop-up {
+            left: 0;
+            transform: none;
+            margin-bottom: 9.6rem;
+        }
     }
 }

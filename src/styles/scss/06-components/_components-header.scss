@@ -36,8 +36,12 @@
             margin-left: auto;
             margin-right: auto; 
 
+            @include for-small-phone-only {
+                font-size: 3rem;
+            }
+
             @include for-tablet-landscape-up {
-                width: 50%;
+                width: 45%;
             }
         }
 
@@ -68,13 +72,17 @@
         &__wrapper {
             @include for-desktop-up {
                 display: grid;
-                grid-template-columns: 5% 20% 5% 2% 5% 1fr 5%;
+                grid-template-columns: 5% 13% 5% 2% 5% 1fr 5%;
             }
         }
 
 
         &__btn {
             margin: 4.6rem auto;
+
+            @include for-small-phone-only {
+                padding: 1.6rem 7.4rem;
+            }
 
             @include for-desktop-up {
                 padding: 1.4rem 3.2rem;
@@ -99,14 +107,20 @@
                 border-radius: 50%;
                 margin: 0 0.4rem;
 
+                @include for-small-phone-only {
+                    &:nth-child(n + 12) {
+                        display: none;
+                    }
+                }
+
                 @include for-phone-only {
-                    &:nth-child(n + 16) {
+                    &:nth-child(n + 15) {
                         display: none;
                     }
                 }
 
                 @include for-tablet-portrait-up {
-                    &:nth-child(n + 32) {
+                    &:nth-child(n + 30) {
                         display: none;
                     }
                 }

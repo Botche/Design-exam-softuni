@@ -1,0 +1,9 @@
+@keyframes hover-button {
+    from {
+        box-shadow: $shadow-2dp;
+    }
+
+    to {
+        box-shadow: none;
+    }
+}

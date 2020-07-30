@@ -72,6 +72,10 @@
 .footer-navigation {
     align-items: unset;
 
+    @include for-small-phone-only {
+        height: 72rem;
+    }
+
     &__wrapper {
         @include for-tablet-landscape-up {
             flex-basis: 15%;

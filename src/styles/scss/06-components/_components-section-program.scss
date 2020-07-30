@@ -1,7 +1,6 @@
 .section-program__wrapper {
     @include for-tablet-landscape-up {
         display: flex;
-        justify-content: space-between;
     }
 }
 
@@ -10,7 +9,7 @@
     position: relative;
 
     @include for-tablet-landscape-up {
-        flex-basis: 60%;
+        flex-basis: 55%;
     }
 
     &__header {
@@ -33,6 +32,14 @@
         position: relative;
         margin-bottom: 1.6rem;
 
+        &--big-at-phone {
+            @include for-phone-only {
+                textarea {
+                    height: 8rem;
+                }
+            }
+        }
+
         &::after {
             @extend %center-Y-absolute;
             content: url(../../../images/main/Input-arrow-down.svg);
@@ -53,6 +60,7 @@
         }
 
         @include for-desktop-up {
+            margin-left: 9rem;
             align-self: flex-end;
             padding-bottom: 4rem;
         }

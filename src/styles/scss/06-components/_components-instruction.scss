@@ -1,7 +1,23 @@
 .instruction {
     
+    @include for-desktop-up {
+        flex-basis: 30%;
+    }
+
+    &-wrapper {
+    
+        @include for-desktop-up {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__title {
         color: $color-green-300;
         text-align: center;
+    
+        @include for-desktop-up {
+            text-align: start;
+        }
     }
 }
