@@ -8,6 +8,12 @@
         box-shadow: $shadow-4dp-button;
         color: $color-white;
         background-color: $color-orange-800;
+
+        &-outline {
+            border: 0.1rem solid $color-orange-800;
+            color: $color-orange-800;
+            background-color: $color-white;
+        }
     }
 
     &--small {

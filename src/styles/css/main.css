@@ -75,7 +75,7 @@ a {
 
 .container--grid {
   display: grid;
-  grid-template-columns: 2rem 1fr 2rem; }
+  grid-template-columns: 5% 90% 5%; }
   @media (min-width: 900px) {
     .container--grid {
       grid-template-columns: 7.5rem 1fr 7.5rem; } }
@@ -144,6 +144,10 @@ a {
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2), 0 0.4rem 0.5rem rgba(0, 0, 0, 0.12), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.14);
     color: #FFFFFF;
     background-color: #FF9100; }
+    .btn--primary-outline {
+      border: 0.1rem solid #FF9100;
+      color: #FF9100;
+      background-color: #FFFFFF; }
   .btn--small {
     padding: 1rem 2.2rem;
     font-size: 1.3rem;
@@ -388,6 +392,10 @@ a {
       .information-section__line {
         transform: rotate(90deg);
         margin: 3.2rem 0; } }
+
+.instruction__title {
+  color: #41BEAD;
+  text-align: center; }
 
 @media (min-width: 900px) {
   .section-messages {
@@ -644,6 +652,58 @@ a {
     background: #D6D6D6;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.12), 0 0 0.2rem rgba(0, 0, 0, 0.14);
     border-radius: 1.2rem; }
+
+.section-contact-us {
+  margin-bottom: 3.2rem; }
+  .section-contact-us__title {
+    color: #41BEAD;
+    text-align: center; }
+  .section-contact-us__input {
+    border: 1px solid #919191;
+    margin-bottom: 2.4rem; }
+  .section-contact-us__btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.4rem 3.2rem; }
+
+.main {
+  overflow: hidden; }
+
+.section-find-us {
+  margin-top: 8rem;
+  padding: 3.2rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.12), 0 0 0.2rem rgba(0, 0, 0, 0.14);
+  border-radius: 1.2rem; }
+  .section-find-us__map {
+    position: relative;
+    top: 0;
+    transform: scale(2) translateX(-25%); }
+  .section-find-us__title {
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #41BEAD; }
+  .section-find-us__work-time-wrapper {
+    margin-bottom: 3rem;
+    display: flex; }
+  .section-find-us__work-time {
+    margin-right: 2rem;
+    color: #FF9100; }
+  .section-find-us__btn {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 1.4rem 2.5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.section-instructions {
+  background-color: #FFF8E1;
+  padding-bottom: 2.4rem; }
+  .section-instructions__title {
+    color: #41BEAD;
+    text-align: center; }
 
 @media (min-width: 900px) {
   .section-program__wrapper {

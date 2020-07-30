@@ -1,0 +1,9 @@
+.section-instructions {
+    background-color: $color-orange-50;
+    padding-bottom: 2.4rem;
+
+    &__title {
+        color: $color-green-300;
+        text-align: center;
+    }
+}

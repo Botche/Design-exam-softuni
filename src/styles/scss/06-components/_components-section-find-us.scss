@@ -1,0 +1,47 @@
+.main { 
+    overflow: hidden;
+}
+
+.section-find-us {
+    margin-top: 8rem;
+    padding: 3.2rem;
+    box-shadow: $shadow-1dp;
+    border-radius: 1.2rem;
+
+    &__map {
+        position: relative;
+        top: 0;
+        transform: scale(2) translateX(-25%);
+    }
+
+    &__form {
+    }
+    
+    &__title {
+        margin-top: 0;
+
+        font-size: 2rem;
+        line-height: 2.4rem;
+        
+        color: $color-green-300;
+    }
+
+    &__work-time-wrapper {
+        margin-bottom: 3rem;
+        display: flex;
+    }
+
+    &__work-time {
+        margin-right: 2rem;
+        color: $color-orange-800;
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        padding: 1.4rem 2.5rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
