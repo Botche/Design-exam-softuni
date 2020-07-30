@@ -17,12 +17,7 @@
     }
 
     &__list {
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
+        @extend %center-flex;
     }
 
     &__item {
@@ -121,9 +116,6 @@
     }
 
     &__list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
 
         &--aside {
             display: block;

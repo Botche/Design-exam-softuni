@@ -3,6 +3,11 @@
     display: block;
 }
 
+%center-margins {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 %center-both-absolute {
     position: absolute;
     top: 50%;
@@ -20,4 +25,27 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+%center-X-flex {
+    display: flex;
+    justify-content: center;
+}
+
+%center-Y-flex {
+    display: flex;
+    align-items: center;
+}
+
+%center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%outline-dot {
+    @extend %pseudo; 
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem 0 rgba(0,0,0,0.75);
 }

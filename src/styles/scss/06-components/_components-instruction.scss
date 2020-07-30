@@ -1,5 +1,10 @@
 .instruction {
-    
+    transition: transform 0.7s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
     @include for-desktop-up {
         flex-basis: 30%;
     }

@@ -16,6 +16,10 @@
 
         &:hover {
             cursor: url("../../../images/Cursor.svg"), auto;
+
+            .section-resume__video-button {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
         }
 
         @include for-tablet-landscape-up {
@@ -26,5 +30,6 @@
     &__video-button {
         @extend %center-both-absolute;
         height: 30%;
+        transition: transform 0.5s;
     }
 }

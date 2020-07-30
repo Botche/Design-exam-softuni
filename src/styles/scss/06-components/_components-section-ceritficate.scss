@@ -28,15 +28,12 @@
 
     &__media {
         flex-basis: 50%;
-        display: flex;
-        justify-content: center;
+        @extend %center-X-flex;
     }
 
     &__media-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
+        @extend %center-flex;
+        width: 50%;
         height: 20rem;
 
         background: $color-grey-300;
