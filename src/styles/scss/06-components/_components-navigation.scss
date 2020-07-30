@@ -136,6 +136,7 @@
 
     &__link {
         color: $color-grey-200;
+        transition: all 0.4s ease-out;
 
         &:hover {
             cursor: url('../../../images/Cursor.svg'), auto;

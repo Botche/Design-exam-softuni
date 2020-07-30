@@ -12,8 +12,38 @@
         background-color: $color-blue-200;
     }
 
+    &__wrapper {
+        @include for-tablet-landscape-up {
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        @include for-tablet-landscape-up {
+            margin-bottom: 2.4rem;
+            font-size: 3.6rem;
+            line-height: 4.4rem;
+        }
+    }
+
+    &__form-wrapper {
+        @include for-tablet-landscape-up {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
     &__form {
         margin: 4.8rem 0 4.6rem;
+        @include for-tablet-landscape-up {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 80%;
+        }
     }
 
     &__input {
@@ -21,5 +51,18 @@
         color: $color-white;
         border: 0.1rem solid $color-white;
         background-color: transparent;
+
+        @include for-tablet-landscape-up {
+            flex-basis: 30%;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 5.2rem;
+        @include for-tablet-landscape-up {
+            margin-bottom: 0;
+            flex-basis: 10%;
+            padding: 1.4rem 3.2rem;
+        }
     }
 }

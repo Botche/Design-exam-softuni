@@ -16,4 +16,36 @@
             background-color: $color-green-50;
         }
     }
+
+    &--trainers {
+        .dot {
+            @include for-phone-only {
+                &:nth-child(n + 19) {
+                    display: none;
+                }
+            }
+
+            @include for-tablet-portrait-up {
+                &:nth-child(n + 40) {
+                    display: none;
+                }
+            }
+
+            @include for-tablet-landscape-up {
+                &:nth-child(n) {
+                    display: block;
+                }
+
+                &:nth-child(n + 50) {
+                    display: none;
+                }
+            }
+
+            @include for-big-desktop-up {
+                &:nth-child(n) {
+                    display: block;
+                }
+            }
+        }
+    }
 }
