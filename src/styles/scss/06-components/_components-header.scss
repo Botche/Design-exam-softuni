@@ -1,8 +1,8 @@
 .header {
     height: 7rem;
     box-shadow: $shadow-2dp;
-    position: relative;
-    z-index: 2;
+    
+    @include position(relative, top, unset, left, unset, 2);
 
     &__logo-wrapper {
         &--mobile {
@@ -17,7 +17,7 @@
             }
 
             @include for-tablet-portrait-up {
-                display: flex ;
+                @include display-flex (unset, unset, unset);
             }
         }
     }
@@ -94,8 +94,7 @@
 
         &__perforated-line {
             margin-bottom: 2.4rem;
-            display: flex;
-            justify-content: center;
+            @include display-flex (center, unset, unset);
             position: relative;
 
             .dot {   
@@ -198,9 +197,7 @@
             @include for-desktop-up {
                 height: 85%;
                 margin: auto 0;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include display-flex (space-between, center, column);
                 grid-column-start: 4;
                 grid-column-end: 5;
             }

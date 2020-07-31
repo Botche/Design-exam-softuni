@@ -15,9 +15,7 @@
 
     &__form {
         @include for-desktop-up {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
+            @include display-flex (space-between, unset, row wrap);
         }
     }
 
@@ -37,9 +35,14 @@
                 flex-basis: 100%;
             }
         }
+
+        &:focus {
+            outline-color: $color-orange-800;
+        }
     }
 
     &__btn {
+        @include position(relative, top, unset, left, 50%, 1);
         position: relative;
         left: 50%;
         transform: translateX(-50%);

@@ -6,7 +6,7 @@
 
 
     &--flex {
-        display: flex;
+        @include display-flex (unset, unset, unset);
     }
 
     &--grid {

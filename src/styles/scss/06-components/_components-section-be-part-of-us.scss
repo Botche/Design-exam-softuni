@@ -10,8 +10,7 @@
     &::before {
         @extend %pseudo;
         width: 100%;
-        position: absolute;
-        top: -1.2rem;
+        @include position(absolute, top, -1.2rem, left, unset, 1);
         height: 1.2rem;
         background-color: $color-blue-200;
     }
@@ -34,19 +33,15 @@
 
     &__form-wrapper {
         @include for-tablet-landscape-up {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include display-flex (space-between, center, unset);
         }
     }
 
     &__form {
         margin: 4.8rem 0 4.6rem;
         @include for-tablet-landscape-up {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-basis: 80%;
+            @include display-flex (space-between, center, unset);
+            flex-basis: 75%;
         }
     }
 
@@ -58,6 +53,11 @@
 
         @include for-tablet-landscape-up {
             flex-basis: 30%;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $color-grey-700;
         }
     }
 

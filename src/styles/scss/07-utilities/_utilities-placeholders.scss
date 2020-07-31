@@ -27,22 +27,6 @@
     transform: translateX(-50%);
 }
 
-%center-X-flex {
-    display: flex;
-    justify-content: center;
-}
-
-%center-Y-flex {
-    display: flex;
-    align-items: center;
-}
-
-%center-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 %outline-dot {
     @extend %pseudo; 
     position: absolute;

@@ -1,0 +1,13 @@
+@mixin display-flex ($justify-content, $align-items, $flex-flow) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-flow: $flex-flow;
+}
+
+@mixin position ($position, $top-or-bottom, $top-or-bottom-value, $left-or-right, $left-or-right-value, $z-index) {
+    position: $position;
+    #{$top-or-bottom}: $top-or-bottom-value;
+    #{$left-or-right}: $left-or-right-value;
+    z-index: $z-index;
+}

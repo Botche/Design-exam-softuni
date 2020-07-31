@@ -1,8 +1,10 @@
 .instruction {
     transition: transform 0.7s ease;
 
-    &:hover {
-        transform: scale(1.1);
+    @include for-desktop-up {   
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     @include for-desktop-up {
@@ -12,8 +14,7 @@
     &-wrapper {
     
         @include for-desktop-up {
-            display: flex;
-            justify-content: space-between;
+            @include display-flex (space-between, unset, unset);
         }
     }
 

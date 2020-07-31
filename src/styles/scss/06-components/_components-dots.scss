@@ -1,6 +1,5 @@
 .dots {
-    display: flex;
-    justify-content: center;
+    @include display-flex (center, unset, unset);
     
     .dot {
         width: 1rem;

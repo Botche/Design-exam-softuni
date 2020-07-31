@@ -2,15 +2,10 @@
     margin-bottom: 2.4rem;
 
     @include for-tablet-portrait-up {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include display-flex (space-between, center, unset);
     }
 
     @include for-desktop-up {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-bottom: 0 !important;
         flex-grow: 1;
         
@@ -20,10 +15,16 @@
 }
 
 .information-section {
-    @extend %center-Y-flex;
+    @include display-flex (unset, center, unset);
 
     &__media {
         margin-right: 2.4rem;
+
+        @include for-desktop-up {   
+            &:hover {
+                animation: animated-icon 0.7s ease-in-out;
+            }
+        }
     }  
     
     &__body {

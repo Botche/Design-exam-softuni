@@ -13,7 +13,7 @@
     }
 
     .list-icon {
-        display: flex;
+        @include display-flex (unset, unset, unset);
         
         .fab {
             font-size: 2.8rem;

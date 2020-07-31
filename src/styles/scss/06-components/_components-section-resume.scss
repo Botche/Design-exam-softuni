@@ -1,7 +1,6 @@
 .section-resume {
     @include for-tablet-landscape-up {
-        display: flex;
-        justify-content: space-between;
+        @include display-flex (space-between, unset, unset);
     }
 
     &__content-wrapper {
@@ -17,8 +16,10 @@
         &:hover {
             cursor: url("../../../images/Cursor.svg"), auto;
 
-            .section-resume__video-button {
-                transform: translate(-50%, -50%) scale(1.1);
+            @include for-desktop-up {
+                .section-resume__video-button {
+                    transform: translate(-50%, -50%) scale(1.1);
+                }
             }
         }
 

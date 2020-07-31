@@ -3,18 +3,23 @@
     margin-bottom: 10rem;
 
     @include for-tablet-landscape-up {
-        display: flex;
-        align-items: center;
+        @include display-flex (unset, center, unset);
     }
 
     &__body {
-        display: flex;
+        @include display-flex (unset, unset, unset);
         flex-basis: 50%;
     }
 
     &__icon-wrapper {
         align-self: start;
         margin-right: 1.8rem;
+
+        @include for-desktop-up {   
+            &:hover {
+                animation: animated-icon 0.7s ease-in-out;
+            }
+        }
     }
 
     &__icon {    
@@ -28,11 +33,12 @@
 
     &__media {
         flex-basis: 50%;
-        @extend %center-X-flex;
+        
+        @include display-flex (center, unset, unset);
     }
 
     &__media-content {
-        @extend %center-flex;
+        @include display-flex (center, center, unset);
         width: 50%;
         height: 20rem;
 

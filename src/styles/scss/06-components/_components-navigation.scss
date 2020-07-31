@@ -1,6 +1,5 @@
 .navigation {
-    display: flex;
-    align-items: center;
+    @include display-flex (center, center, unset);
 
     &__list-wrapper {
         @include for-phone-only {
@@ -12,12 +11,12 @@
         }
 
         @include for-tablet-landscape-up {
-            display: flex;
+            @include display-flex (unset, unset, unset);
         }
     }
 
     &__list {
-        @extend %center-flex;
+        @include display-flex (center, center, unset);
     }
 
     &__item {
@@ -53,19 +52,17 @@
     &--footer {
         height: 42rem;
         margin-top: 4rem;
-        flex-flow: column wrap;
+        
+        @include display-flex (unset, unset, column wrap);
 
         @include for-tablet-landscape-up { 
             height: 30rem;
-            flex-flow: row;
-            align-items: stretch;
-            justify-content: space-between;
+            @include display-flex (space-between, stretch, row);
         }
     }
 }
 
 .footer-navigation {
-    align-items: unset;
 
     @include for-small-phone-only {
         height: 72rem;
@@ -99,9 +96,8 @@
 
         @include for-tablet-landscape-up { 
             display: block;
-            position: relative;
             height: 40rem;
-            top: -34%;
+            @include position(relative, top, -34%, left, unset, 1);
         }
     }
 
@@ -111,7 +107,7 @@
 
     &__list-wrapper {
         @include for-tablet-landscape-up { 
-            display: flex;
+            @include display-flex (unset, unset, unset);
         }
     }
 

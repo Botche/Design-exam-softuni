@@ -8,9 +8,7 @@
     .navigation__list-wrapper {
         display: block;
         width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+        @include position(absolute, top, 0, left, 0, unset);
         transform: translateY(17.9%);
         transition: opacity 0.5s, visibility 0.5s;
          
@@ -74,8 +72,8 @@
         display: block;
         width: 33px;
         height: 36px;
-        position: absolute;
-        right: 5%;
+        
+        @include position(absolute, top, unset, right, 5%, unset);
         
         cursor: url("../../../images/Cursor.svg"), auto;
         

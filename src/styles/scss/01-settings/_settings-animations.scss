@@ -7,3 +7,13 @@
         box-shadow: none;
     }
 }
+
+@keyframes animated-icon {
+    50% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
