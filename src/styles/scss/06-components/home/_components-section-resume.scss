@@ -1,13 +1,8 @@
 .section-resume {
     @include for-tablet-landscape-up {
-        @include display-flex (space-between, unset, unset);
-    }
-
-    &__content-wrapper {
-
-        @include for-tablet-landscape-up {
-            flex-basis: 60%;
-        }
+        display: grid;
+        grid-template-columns: 60% 35%;
+        justify-content: space-between;
     }
 
     &__media {
@@ -21,10 +16,6 @@
                     transform: translate(-50%, -50%) scale(1.1);
                 }
             }
-        }
-
-        @include for-tablet-landscape-up {
-            flex-basis: 35%;
         }
     }
 

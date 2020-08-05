@@ -1,16 +1,13 @@
 .section-program__wrapper {
     @include for-tablet-landscape-up {
-        @include display-flex (unset, unset, unset);
+        display: grid;
+        grid-template-columns: 55% 11% 30% 1fr;
     }
 }
 
 .section-program {
     background-color: $color-orange-500;
     position: relative;
-
-    @include for-tablet-landscape-up {
-        flex-basis: 55%;
-    }
 
     &__header {
         @include display-flex (unset, unset, unset);
@@ -32,6 +29,13 @@
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 2.2rem;
+    }
+
+    &__input {
+        &:focus {
+            outline: none;
+            cursor: default;
+        }
     }
 
     &__input-wrapper {
@@ -61,14 +65,14 @@
         display: none;
 
         @include for-tablet-landscape-up {
-            flex-basis: 30%;
             display: block;
+            grid-column-start: 3;
+            grid-column-end: 4;
         }
 
         @include for-desktop-up {
-            margin-left: 9rem;
             align-self: flex-end;
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
         }
     }
 

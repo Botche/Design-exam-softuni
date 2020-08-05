@@ -14,7 +14,9 @@
     &-wrapper {
     
         @include for-desktop-up {
-            @include display-flex (space-between, unset, unset);
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-between;
         }
     }
 

@@ -1,10 +1,12 @@
 .main-container {
     color: $color-grey-700;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
 }
 
 .container {
-
-
     &--flex {
         @include display-flex (unset, unset, unset);
     }
@@ -12,10 +14,6 @@
     &--grid {
         display: grid;
         grid-template-columns: 5% 90% 5%;
-
-        @include for-tablet-landscape-up {
-            grid-template-columns: 7.5rem 1fr 7.5rem;
-        }
 
         &-full-size {
             grid-column-start: 1;

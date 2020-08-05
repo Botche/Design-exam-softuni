@@ -2,7 +2,11 @@
     margin-bottom: 2.4rem;
 
     @include for-tablet-portrait-up {
-        @include display-flex (space-between, center, unset);
+        display: grid;
+        grid-template-columns: 20% 1% 20% 1% 20% 1% 20%;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
     }
 
     @include for-desktop-up {
@@ -26,6 +30,11 @@
             }
         }
     }  
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
     
     &__body {
         flex-grow: 1;
@@ -54,8 +63,8 @@
         margin: 2.4rem 0;
 
         @include for-tablet-portrait-up {
-            transform: rotate(90deg);
-            margin: 3.2rem 0;
+            transform: rotate(90deg) translateY(0.7rem);
+            margin: 0;
         }
     }
 }

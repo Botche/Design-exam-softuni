@@ -1,12 +1,17 @@
 .trainers-wrapper {
     @include for-tablet-landscape-up {
-        @include display-flex (space-between, unset, unset);
+        display: grid;
+        grid-template-columns: 49% 49%;
+        justify-content: space-between;
     }
 }
 
 .trainers {
     @include for-tablet-landscape-up {
-        @include display-flex (space-between, unset, row wrap);
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+        justify-content: space-between;
         width: 80%;
         margin: 0 auto;
     }

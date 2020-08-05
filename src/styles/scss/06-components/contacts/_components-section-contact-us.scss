@@ -2,10 +2,11 @@
     margin: 3.2rem 0;
 
     @include for-desktop-up {
-        margin-top: -25rem;
+        display: grid;
+        grid-template-rows: 16% 1fr 15%;
+
         width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 18rem auto 9.2rem;
     }
 
     &__title {
@@ -15,7 +16,10 @@
 
     &__form {
         @include for-desktop-up {
-            @include display-flex (space-between, unset, row wrap);
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: 25% 75%;
+            justify-content: space-between;
         }
     }
 
@@ -23,16 +27,11 @@
         border: 1px solid $color-grey-500;
         margin-bottom: 2.4rem;
 
-        @include for-desktop-up {
-            flex-basis: 48%;
-        }
-
         &--big {
-            height: 10rem;
-
+            margin-bottom: 0;
             @include for-desktop-up {
-                height: 20rem;
-                flex-basis: 100%;
+                grid-column-start: 1;
+                grid-column-end: 3;
             }
         }
 
@@ -42,16 +41,14 @@
     }
 
     &__btn {
-        @include position(relative, top, unset, left, 50%, 1);
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        @include position(relative, top, unset, left, unset, 1);
         padding: 1.4rem 3.2rem;
+        margin-top: 2rem;
+        width: 100%;
 
         @include for-desktop-up {
-            left: 0;
+            width: min-content;
             transform: none;
-            margin-bottom: 9.6rem;
         }
     }
 }

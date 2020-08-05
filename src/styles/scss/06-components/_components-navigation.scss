@@ -48,24 +48,21 @@
             display: block;
         }
     }
-
-    &--footer {
-        height: 42rem;
-        margin-top: 4rem;
-        
-        @include display-flex (unset, unset, column wrap);
-
-        @include for-tablet-landscape-up { 
-            height: 30rem;
-            @include display-flex (space-between, stretch, row);
-        }
-    }
 }
 
 .footer-navigation {
+    height: 42rem;
+    margin-top: 4rem;
+    
+    @include display-flex (unset, unset, column wrap);
 
     @include for-small-phone-only {
         height: 72rem;
+    }
+
+    @include for-tablet-landscape-up { 
+        height: 30rem;
+        @include display-flex (space-between, stretch, row);
     }
 
     &__wrapper {
@@ -96,8 +93,11 @@
 
         @include for-tablet-landscape-up { 
             display: block;
-            height: 40rem;
+            
             @include position(relative, top, -34%, left, unset, 1);
+            position: relative;
+            height: 40rem;
+            top: -34%;
         }
     }
 

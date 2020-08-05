@@ -2,7 +2,9 @@
     margin-bottom: 9rem;
 
     @include for-tablet-landscape-up {
-        @include display-flex (space-between, unset, unset);
+        display: grid;
+        grid-template-columns: 45% 2% 45%;
+        justify-content: space-between;
     }
 
     .dots {
@@ -18,7 +20,7 @@
 
         @include for-phone-only {
 
-            .dot:nth-child(2n) {
+            .dot:nth-child(n + 10) {
                 display: none;
             }
         }

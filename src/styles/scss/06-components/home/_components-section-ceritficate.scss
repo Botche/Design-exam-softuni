@@ -3,12 +3,13 @@
     margin-bottom: 10rem;
 
     @include for-tablet-landscape-up {
-        @include display-flex (unset, center, unset);
+        display: grid;
+        grid-template-columns: 50% 15% 30% 1fr;
+        align-items: center;
     }
 
     &__body {
         @include display-flex (unset, unset, unset);
-        flex-basis: 50%;
     }
 
     &__icon-wrapper {
@@ -32,15 +33,14 @@
     }
 
     &__media {
-        flex-basis: 50%;
-        
-        @include display-flex (center, unset, unset);
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 
     &__media-content {
         @include display-flex (center, center, unset);
-        width: 50%;
         height: 20rem;
+        width: 100%;
 
         background: $color-grey-300;
         
