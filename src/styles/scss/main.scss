@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
-@import "../../node_modules/modern-normalize/modern-normalize.css";
+@import "../../node_modules/modern-normalize/modern-normalize";
 
 @import "./07-utilities/utilities-functions";
 @import "./01-settings/settings-breakpoints";
@@ -7,8 +7,6 @@
 @import "./01-settings/settings-shadows";
 @import "./01-settings/settings-typography";
 @import "./01-settings/settings-animations";
-
-@import "./03-generic/generic-page.scss";
 
 @import "./04-elements/elements-image";
 @import "./04-elements/elements-inputs";

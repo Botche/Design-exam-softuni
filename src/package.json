@@ -6,7 +6,7 @@
   "scripts": {
     "start-server": "live-server",
     "watch:sass": "node-sass styles/scss/main.scss styles/css/main.css -w",
-    "compile:sass": "node-sass styles/scss/main.scss styles/css/main.css",
+    "compile:sass": "node-sass styles/scss/main.scss styles/css/main.css --import-css true",
     "compress:css": "node-sass styles/css/main.css styles/css/main.css --output-style compressed",
     "autoprefix:css": "npx postcss ./styles/css/main.css --use autoprefixer -o ./styles/css/main.css",
     "develop": "npm-run-all --parallel start-server watch:sass",
