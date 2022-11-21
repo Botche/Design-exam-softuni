@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <section class="header container--grid">
+                <div class="container--flex container--main-layout centered--flex">
+                    <div class="header__logo-wrapper--mobile container--flex">
+                        <div class="header__arrow-wrapper">
+                            <img class="header__arrow--black" src="./images/header/Arrow-header-drop-down-mobile.svg"
+                                alt="Menu icon">
+                        </div>
+                        <a href="index.html">
+                            <div>
+                                <img src="./images/header/Logo-header-mobile.svg" alt="Logo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__logo-wrapper--not-mobile container--flex">
+                        <div class="header__arrow-wrapper">
+                            <img class="header__arrow" src="./images/header/Arror-header-drop-down.svg" alt="Menu icon">
+                        </div>
+                        <a href="index.html">
+                            <div class="header__logo">
+                                <img src="./images/header/Logo-header.svg" alt="Logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <nav class="navigation">
+                        <div class="navigation__list-wrapper">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a class="navigation__link" href="#">обучения</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Събития</a></li>
+                                <li class="navigation__item"><a class="navigation__link"
+                                        href="/trainers.html">Преподаватели</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Блог</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+
+                        <img class="navigation__search" src="./images/header/Search-icon.svg" alt="Search icon">
+                        <button class="btn btn--primary btn--small">Вход</button>
+
+                        <div class="burger-menu margin--left">
+                            <input class="burger-menu__flag" type="checkbox" />
+                            <span class="burger-menu__line"></span>
+                            <span class="burger-menu__line"></span>
+                            <span class="burger-menu__line"></span>
+
+                            <div class="navigation__list-wrapper">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item"><a class="navigation__link" href="#">обучения</a></li>
+                                    <li class="navigation__item"><a class="navigation__link" href="#">Събития</a></li>
+                                    <li class="navigation__item"><a class="navigation__link"
+                                            href="/trainers.html">Преподаватели</a></li>
+                                    <li class="navigation__item"><a class="navigation__link" href="#">Блог</a></li>
+                                    <li class="navigation__item"><a class="navigation__link"
+                                            href="/contact.html">Контакти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </header>
+
+        <main class="main--contact container--grid">
+            <div class="section-find-us__map container--grid-full-size">
+                <img src="./images/main/Map.svg" alt="Map">
+            </div>
+            <section class="section-find-us container--main-layout">
+                <div class="section-find-us__form">
+                    <div class="section-find-us__form-children-wrapper">
+                        <div class="section-find-us__form-child">
+                            <h3 class="section-find-us__title">Адрес:</h3>
+                            <p class="section-find-us__content">
+                                София, кв. Изгрев, ул. "Тинтява" 15-17, етаж 1, ПК: 1113
+                            </p>
+                        </div>
+                        <div
+                            class="section-find-us__form-child section-find-us__form-child--full-row section-find-us__form-child--last">
+                            <h3 class="section-find-us__title">Контакти:</h3>
+                            <p class="section-find-us__content">
+                                + 359 892 241 199
+                            </p>
+                            <p class="section-find-us__content">
+                                digital@softuni.bg
+                            </p>
+                        </div>
+                        <div
+                            class="section-find-us__form-child section-find-us__form-child--work-time section-find-us__form-child--big">
+                            <h3 class="section-find-us__title">Работно време:</h3>
+
+                            <div class="section-find-us__work-time-wrapper">
+                                <div class="section-find-us__work-time">
+                                    9:00 - 19:30
+                                </div>
+                                <div class="section-find-us__work-days">
+                                    Понеделник - Петък
+                                </div>
+                            </div>
+
+                            <div class="section-find-us__work-time-wrapper">
+                                <div class="section-find-us__work-time">
+                                    8:30 - 18:00
+                                </div>
+                                <div class="section-find-us__work-days">
+                                    Събота и Неделя
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="section-find-us__btn btn btn--primary-outline">намери ни на картата</button>
+                </div>
+            </section>
+
+            <section class="section-contact-us container--main-layout">
+                <h2 class="section-contact-us__title">Пишете ни</h2>
+                <form class="section-contact-us__form" action="">
+                    <input class="section-contact-us__input" type="text" placeholder="Заглавие">
+                    <input class="section-contact-us__input" type="text" placeholder="Имей адрес">
+                    <textarea class="section-contact-us__input section-contact-us__input--big" name="" cols="30"
+                        rows="10" placeholder="Съобщение"></textarea>
+                </form>
+
+                <button class="section-contact-us__btn btn btn--primary">изпрати</button>
+            </section>
+
+            <section class="section-instructions__wrapper container--grid-full-size container--grid">
+                <div class="section-instructions container--main-layout">
+                    <h2 class="section-instructions__title">Как да стигна до SoftUni?</h2>
+
+                    <div class="instruction-wrapper">
+                        <div class="instruction">
+                            <h3 class="instruction__title">Метро</h3>
+
+                            <p class="instruction__content">
+                                Метростанция <span class="text-bold">Жолио Кюри</span> - на 5-10 минути от СофтУни
+                            </p>
+                            <p class="instruction__content">
+                                Метростанция <span class="text-bold">Г. М. Димитров</span> - на 5-10 минути от СофтУни
+                            </p>
+                        </div>
+                        <div class="instruction">
+                            <h3 class="instruction__title">Автобуси</h3>
+
+                            <p class="instruction__content">
+                                <span class="text-bold">67, 413</span> - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к.
+                                Дианабад” (0627) (на бул. Драган Цанков)
+                            </p>
+                            <p class="instruction__content">
+                                <span class="text-bold">88, 94, 102</span> - Спирка “ПК Диана” (1342) (на 10-ина минути
+                                от СофтУни)
+                            </p>
+                            <p class="instruction__content">
+                                <span class="text-bold">88, 280, 294</span> - Спирка “СБАЛ по онкология” (0764) (на
+                                кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)
+                            </p>
+                            <p class="instruction__content">
+                                <span class="text-bold">123, 69, 70, 88, 67, 413</span> - Спирка “СБАЛ по онкология”
+                                (2542) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)
+                            </p>
+                        </div>
+                        <div class="instruction">
+                            <h3 class="instruction__title">Маршрутки</h3>
+
+                            <p class="instruction__content">
+                                <span class="text-bold">5</span> - минава през метростанцията на бул Г. М. Димитров
+                            </p>
+                            <p class="instruction__content">
+                                <span class="text-bold">27</span> - минава през метростанцията на бул Г. М. Димитров
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer container--grid">
+            <div class="container--main-layout">
+                <nav class="navigation footer-navigation">
+                    <div class="footer-navigation__media">
+                        <img src="./images/footer/Footer-monster.svg" alt="Footer monster">
+                    </div>
+
+                    <div class="footer-navigation__wrapper footer-navigation__wrapper--bigger">
+                        <h4 class="footer-navigation__title">Softuni Kids</h4>
+                        <div class="footer-navigation__list-wrapper">
+                            <ul class="footer-navigation__list">
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Начало</a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Летни академии</a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Преподаватели</a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Блог</a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Контакти</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-navigation__list footer-navigation__list--aside">
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Общи условия</a>
+                                </li>
+                                <li class="footer-navigation__item">
+                                    <a class="footer-navigation__link" href="#">Лични данни</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-navigation__wrapper">
+                        <h4 class="footer-navigation__title">Всички обучения</h4>
+                        <ul class="footer-navigation__list">
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">Курсове</a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">Събития</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__wrapper">
+                        <h4 class="footer-navigation__title">Всички инициативи</h4>
+                        <ul class="footer-navigation__list">
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">Software University</a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">SoftUni Digital</a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">SoftUni Creative</a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">SoftUni Svetlina</a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#">SoftUni Foundation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navigation__wrapper list-icon__wrapper margin--top-medium">
+                        <h4 class="footer-navigation__title laptop-only">Намерете ни</h4>
+                        <ul class="footer-navigation__list list-icon">
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="footer-navigation__item">
+                                <a class="footer-navigation__link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                        <p class="footer-navigation__copy-right laptop-only">© 2016-2020 - SoftUni Kids. All Rights
+                            Reserved.</p>
+                    </div>
+                </nav>
+
+                <hr class="footer-navigation__line" />
+
+                <p class="footer-navigation__copy-right">© 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
