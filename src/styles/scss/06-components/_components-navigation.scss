@@ -31,7 +31,7 @@
 
         &:hover {
             color: $color-orange-800;
-            cursor: url('../../../images/Cursor.svg'), auto;
+            cursor: url('../../images/Cursor.svg'), auto;
         }
     }
 
@@ -41,7 +41,7 @@
         margin-left: 2rem;
 
         &:hover {
-            cursor: url('../../../images/Cursor.svg'), auto;
+            cursor: url('../../images/Cursor.svg'), auto;
         }
 
         @include for-tablet-landscape-up {
@@ -131,7 +131,7 @@
         transition: all 0.4s ease-out;
 
         &:hover {
-            cursor: url('../../../images/Cursor.svg'), auto;
+            cursor: url('../../images/Cursor.svg'), auto;
             color: $color-green-300;
         }
     }

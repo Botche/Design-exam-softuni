@@ -9,7 +9,7 @@
         position: relative;
 
         &:hover {
-            cursor: url("../../../images/Cursor.svg"), auto;
+            cursor: url("../../images/Cursor.svg"), auto;
 
             @include for-desktop-up {
                 .section-resume__video-button {
